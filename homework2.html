@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <style>
+        body{
+            margin-top: -40px;
+
+        }
+       h3{
+         font-size: 40px;
+         text-align: center;
+         
+
+        }
+        h1{
+            text-align: center;
+            color: blue;
+            font-size: 30px;
+            margin-top: -40px;
+        }
+        h2{
+            text-align: center;
+            font-size:20px;
+        }
+        .tomorrow{
+            height: 100px;
+            font-size: 18px;
+            width: 400px;
+            text-align: center;
+            margin: auto;
+            margin-top: -35px;
+        }
+        .tomorrow .p1{
+            color:rgb(44, 167, 197);
+        }
+        .tomorrow .p1 .p2{
+            color: rgb(13, 14, 14);
+        }
+        .saturday{
+            height: 100px;
+            font-size: 18px;
+            width: 400px;
+            text-align: center;
+            margin: auto;
+            margin-top: -20px;
+        }
+        
+        .sunday{
+            height: 100px;
+            font-size: 18px;
+            width: 400px;
+            text-align: center;
+            margin: auto;
+            margin-top: -35px;
+        }
+        
+        .sunday .sun{
+            color: orange;
+            font-size: 30px;
+        }
+        .sunday .sun .text{
+            color: black;
+        }
+        .sunday .deg{
+            font-size:18px;
+        }
+        .sunday:hover{
+            background-color: rgb(245, 234, 183);
+        }
+        .tomorrow:hover{
+            background-color: rgb(245, 234, 183);
+        }
+        .saturday:hover{
+            background-color: rgb(245, 234, 183);
+        }
+        .button{
+            height: 80px;
+            width: 120px;
+            margin: auto;
+            margin-top: 10px;
+            
+        }
+        .button .btn{
+            height: 50px;
+            width: 140px;
+            border-radius: 30px;
+            font-size: 18px;
+            background-color: blue;
+            border: none;
+            color: white;
+        }
+        .coder{
+            font-size: 20px;
+            text-align: center;
+            font-weight: lighter;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .button .btn:hover{
+            background-color: rgb(241, 236, 236);
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <!--here is the first emoji-->
+      <h3 id="h3">&#9925;</h3>
+         <h1 id="h1">currently 21&deg; in Tokyo</h2>
+        <h2>13&deg;&nbsp;/&nbsp;<b>23&deg;</b></h2>
+
+    <br>
+    <div class="tomorrow">
+    <div class="tomorrow">
+        <p class="p1">&#127783 &nbsp; <span class="p2"><b>TOMORROW</b></span></p>
+      <div class="deg"><p>10&deg;&nbsp;&nbsp;/&nbsp;&nbsp;<b>22&deg;</b></p></div>
+    </div>
+    </div>
+    <br>
+    <div class="saturday">
+    <div class="saturday">
+        <span class="font-size:100px;">&#9925;&nbsp;&nbsp;<b>SATURDAY</b></span>
+        <div class="deg1"><p>15&deg;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<b>17&deg;</b></p></div>
+    </div>
+    </div>
+    <div class="sunday">
+    <div class="sunday">
+        <p class="sun">☀&nbsp;<span class="text">sunday</span></p>
+        <div class="deg"><p>25&deg;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;<b>28&deg;</b></p></div>
+    </div>
+    </div>
+    <div class="button">
+       <button class="btn">change city</button>
+    </div>
+    <div class="coder"><p>coded by Lebogang Sekgatja</p></div>
+   <script>
+    function changecity() {
+    let city = prompt("which city are currently at?");
+    let temparature = prompt("what is the current temperature?")
+     if(city === "new york city") {
+        alert('currently -10 in new york city');  
+     } 
+     if(city ==='london'){
+     alert( "currently 5 in london");
+      let h1 = document.querySelector("h1");
+      h1.innerHTML = "its currently 5 in london";
+      document.getElementById("h3").innerHTML = "🥶";
+      h3.innerHTML = "😃";   
+      }
+      
+
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "its currently 10 in  new york city ";
+    let h3 = document.querySelector("h3");
+    h3.innerHTML = "😫";
+      
+    if(city === "paris" ) {
+      
+      document.getElementById("h1").innerHTML = "currently 30 in paris";
+      document.getElementById("h3").innerHTML = "😁";
+      }
+    
+      if(city === "china" ) {
+      
+      document.getElementById("h1").innerHTML = "currently 15 in china";
+      document.getElementById("h3").innerHTML = "😜";
+      }
+ }
+   
+    let changecitybutton = document.querySelector("button")
+    changecitybutton.addEventListener("click", changecity)
+    
+   // let = document.querySelector("button")
+   // changecitybutton.addEventListener("click", changecity)
+    
+   </script>
+</body>
