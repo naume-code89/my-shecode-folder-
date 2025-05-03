@@ -1,0 +1,28 @@
+
+h1{
+    color: rgb(33, 33, 80);
+    text-align: center;
+    padding-top: 120px;
+    font-size: 40px;
+    
+}
+h2{
+    color: #8064e9;
+    text-align: center;
+    font-size: 40px;
+   
+}
+p{
+    font-size: 23px;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+} 
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    width: 110px;
+   background-color:#8064e9;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;}
